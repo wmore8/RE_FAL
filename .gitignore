@@ -1,0 +1,46 @@
+# ============================================
+# Gitignore para Visual Studio 2022 + C++ + CMake
+# Repositorio RE_FAL
+# ============================================
+
+# Directorios de compilacion y cache de CMake / VS
+out/
+build/
+CMakeBuild/
+.vs/
+.vscode/
+
+# Salidas de compilacion y binarios
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.lastcodeanalysistests
+*.spref
+*.vsidx
+
+# Directorios generados por MSBuild / Visual Studio clasico (por precaucion)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+
+# Archivos de configuracion de usuario de Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos temporales del sistema operativo
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
