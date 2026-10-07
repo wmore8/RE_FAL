@@ -1,51 +1,54 @@
-// =========================================================
-// PLANTILLA: Casos ilimitados hasta fin de fichero (EOF)
-// Asignatura: Fundamentos de la Algoritmia (FAL)
-// =========================================================
+// Nombre del alumno .....
+// Usuario del Juez ......
+
 
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include <vector>
 
-// Funcion que resuelve el problema mediante la tecnica del tema
-// (Iterativos, Divide y Venceras, Programacion Dinamica, Vuelta Atras)
-void resolver() {
-    // TODO: Implementar algoritmo
+
+
+// función que resuelve el problema
+TipoSolucion resolver(TipoDatos datos) {
+    
+    
 }
 
-// Resuelve un caso de prueba. Devuelve false si se alcanza el EOF (std::cin falla)
+// Resuelve un caso de prueba, leyendo de la entrada la
+// configuración, y escribiendo la respuesta
 bool resuelveCaso() {
-    int valor;
-    std::cin >> valor;
+    // leer los datos de la entrada
     
-    // Comprobar fin de entrada
-    if (!std::cin) {
+    if (! std::cin)
         return false;
-    }
     
-    // Lectura del resto del caso
+    TipoSolucion sol = resolver(datos);
     
-    // Resolver y mostrar resultado
-    resolver();
+    // escribir sol
+    
     
     return true;
+    
 }
 
 int main() {
-    // Redireccion de entrada para depuracion local en Visual Studio
-#ifndef DOMJUDGE
-    std::ifstream in("casos.in");
-    if (!in.is_open()) in.open("datos.txt");
-    auto cinbuf = std::cin.rdbuf(in.rdbuf());
-#endif 
-
+    // Para la entrada por fichero.
+    // Comentar para acepta el reto
+    #ifndef DOMJUDGE
+     std::ifstream in("datos.txt");
+     auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
+     #endif 
+    
+    
     while (resuelveCaso())
         ;
 
-#ifndef DOMJUDGE
-    std::cin.rdbuf(cinbuf);
-#endif
-
+    
+    // Para restablecer entrada. Comentar para acepta el reto
+     #ifndef DOMJUDGE // para dejar todo como estaba al principio
+     std::cin.rdbuf(cinbuf);
+     system("PAUSE");
+     #endif
+    
     return 0;
 }

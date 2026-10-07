@@ -12,6 +12,9 @@ endif()
 # Buscar recursivamente todos los archivos .cpp en el repositorio
 file(GLOB_RECURSE ALL_CPPS LIST_DIRECTORIES false "*.cpp")
 
+# Lista para acumular las configuraciones de launch.vs.json
+set(LAUNCH_CONFIGS "")
+
 foreach(CPP_FILE ${ALL_CPPS})
     # Omitir carpetas de plantillas, salida de compilacion o cache
     if(NOT CPP_FILE MATCHES "/plantillas/" AND 
@@ -37,9 +40,35 @@ foreach(CPP_FILE ${ALL_CPPS})
         # Registrar el ejecutable
         add_executable(${TARGET_NAME} "${CPP_FILE}")
 
-        # Directorio de ejecucion en VS 2022: La propia carpeta del ejercicio (para leer casos.in / datos.txt)
+        # 1. Copiar automaticamente archivos de casos (.in, .ans, .txt) a la carpeta del .exe tras compilar
+        file(GLOB TEST_FILES LIST_DIRECTORIES false 
+            "${EXERCISE_DIR}/*.in" 
+            "${EXERCISE_DIR}/*.ans" 
+            "${EXERCISE_DIR}/*.txt"
+        )
+        foreach(TEST_FILE ${TEST_FILES})
+            add_custom_command(
+                TARGET ${TARGET_NAME} POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                        "${TEST_FILE}"
+                        "$<TARGET_FILE_DIR:${TARGET_NAME}>"
+            )
+        endforeach()
+
+        # 2. Propiedad para generadores tradicionales de Visual Studio
         set_target_properties(${TARGET_NAME} PROPERTIES
             VS_DEBUGGER_WORKING_DIRECTORY "${EXERCISE_DIR}"
         )
+
+        # 3. Configuracion de depuracion para Visual Studio 2022 Open Folder (Ninja)
+        file(TO_CMAKE_PATH "${EXERCISE_DIR}" EXERCISE_DIR_CMAKE)
+        string(APPEND LAUNCH_CONFIGS "    {\n      \"type\": \"default\",\n      \"project\": \"CMakeLists.txt\",\n      \"projectTarget\": \"${TARGET_NAME}.exe\",\n      \"name\": \"${TARGET_NAME}.exe\",\n      \"currentDir\": \"${EXERCISE_DIR_CMAKE}\"\n    },\n")
     endif()
 endforeach()
+
+# Generar automaticamente .vs/launch.vs.json para que Visual Studio 2022 establezca el directorio de trabajo
+if(NOT "${LAUNCH_CONFIGS}" STREQUAL "")
+    string(REGEX REPLACE ",\n$" "\n" LAUNCH_CONFIGS_TRIMMED "${LAUNCH_CONFIGS}")
+    set(LAUNCH_JSON "{\n  \"version\": \"0.2.1\",\n  \"defaults\": {},\n  \"configurations\": [\n${LAUNCH_CONFIGS_TRIMMED}  ]\n}\n")
+    file(WRITE "${CMAKE_CURRENT_SOURCE_DIR}/.vs/launch.vs.json" "${LAUNCH_JSON}")
+endif()

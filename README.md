@@ -17,15 +17,15 @@ RE_FAL/
 │   ├── PlantillaJuezNumeroCasos.cpp
 │   ├── PlantillaJuezCentinela.cpp
 │   └── PlantillaJuezCasosIlimitados.cpp
-├── 01_Iterativos/
-│   └── 1.01_MaximoSecuencia/
-│       ├── solucion.cpp          # Codigo fuente con especificacion formal y coste
-│       ├── casos.in              # Entrada de prueba
-│       ├── casos.ans             # Salida esperada
-│       └── prob-*.pdf            # Enunciado del problema
-├── 02_Recursion_DyV/
-├── 03_ProgramacionDinamica/
-├── 04_VueltaAtras/
+├── 0_Introduccion/
+│   ├── 0.1 Duplicar la entrada/
+│   ├── 0.2 Duplicar secuencia de numeros (num casos)/
+│   ├── 0.3 Duplicar secuencia de numeros (centinela)/
+│   └── 0.4 Duplicar secuencia de numeros (casos ilimitados)/
+├── 1_Iterativos/
+├── 2_Recursion_DyV/
+├── 3_ProgramacionDinamica/
+├── 4_VueltaAtras/
 └── Examenes/
 ```
 
@@ -40,37 +40,33 @@ RE_FAL/
 
 ### 2. Ejecutar y depurar un ejercicio
 1. En la barra superior, haz clic en el menú desplegable **"Seleccionar elemento de inicio"** (al lado del botón verde de reproducir).
-2. Selecciona el ejercicio que quieras ejecutar (ej: `1.01_MaximoSecuencia.exe`).
+2. Selecciona el ejercicio que quieras ejecutar (ej: `0.1_Duplicar_la_entrada.exe`).
 3. Pulsa **F5** (depuración) o **Ctrl + F5** (ejecución directa).
-4. El programa ejecutará automáticamente tomando como directorio su propia carpeta, leyendo de `casos.in` (o `datos.txt`).
+4. El programa ejecutará automáticamente tomando como directorio de trabajo su propia carpeta, leyendo de su archivo `.in` (o `datos.txt`).
 
 ### 3. Crear un ejercicio nuevo
-1. Crea una carpeta dentro del tema correspondiente (ej: `01_Iterativos/1.02_NombreProblema/`).
-2. Copia la plantilla adecuada desde `plantillas/` como `solucion.cpp`.
-3. Añade tu archivo de casos `casos.in` y el enunciado `.pdf`.
-4. Visual Studio detectará automáticamente el nuevo ejercicio y aparecerá en el desplegable superior para ejecutarlo con **F5**.
+1. Crea una carpeta dentro del tema correspondiente (ej: `1_Iterativos/1.01_NombreProblema/`).
+2. Copia la plantilla adecuada desde `plantillas/` como `1_01.cpp` (o `solucion.cpp`).
+3. Añade tu archivo de casos de prueba (`1_01.in`), la salida esperada (`1_01.ans`) y el enunciado `.pdf`.
+4. Visual Studio detectará automáticamente el nuevo ejercicio (si tarda, pulsa **Ctrl + S** sobre `CMakeLists.txt`) y aparecerá en el desplegable superior para ejecutarlo con **F5**.
 
 ---
 
 ## Tabla de Seguimiento de Ejercicios
 
+### Tema 0: Introducción
+
+| Nº | Ejercicio | Enunciado | Solución | Complejidad | Estado |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| 0.1 | Duplicar la entrada | [PDF](0_Introduccion/0.1%20Duplicar%20la%20entrada/prob-EDAV-DuplicadorB-7.pdf) | [0_1.cpp](0_Introduccion/0.1%20Duplicar%20la%20entrada/0_1.cpp) | $O(1)$ | `CORRECT` |
+| 0.2 | Duplicar secuencia de números (núm. casos) | [PDF](0_Introduccion/0.2%20Duplicar%20secuencia%20de%20numeros%20(num%20casos)/prob-EDAV-DupSecA.pdf) | [0_2.cpp](0_Introduccion/0.2%20Duplicar%20secuencia%20de%20numeros%20(num%20casos)/0_2.cpp) | $O(N)$ | `CORRECT` |
+| 0.3 | Duplicar secuencia de números (centinela) | [PDF](0_Introduccion/0.3%20Duplicar%20secuencia%20de%20numeros%20(centinela)/prob-EDAV-DupSecB.pdf) | [0_3.cpp](0_Introduccion/0.3%20Duplicar%20secuencia%20de%20numeros%20(centinela)/0_3.cpp) | $O(N)$ | `CORRECT` |
+| 0.4 | Duplicar secuencia de números (casos ilimitados) | [PDF](0_Introduccion/0.4%20Duplicar%20secuencia%20de%20numeros%20(casos%20ilimitados)/prob-EDAV-DupSecC.pdf) | [0_4.cpp](0_Introduccion/0.4%20Duplicar%20secuencia%20de%20numeros%20(casos%20ilimitados)/0_4.cpp) | $O(N)$ | `CORRECT` |
+
 ### Tema 1: Algoritmos Iterativos
 
 | Nº | Ejercicio | Enunciado | Solución | Complejidad | Estado |
 | :---: | :--- | :---: | :---: | :---: | :---: |
-| 1.01 | Máximo de una secuencia | [PDF](01_Iterativos/1.01_MaximoSecuencia/prob-FAL-IT-MaximoSecuencia-3.pdf) | [solucion.cpp](01_Iterativos/1.01_MaximoSecuencia/solucion.cpp) | $O(N)$ tiempo / $O(1)$ espacio | `Aceptado (AC)` |
+| - | *(Pendiente de añadir)* | - | - | - | - |
 
 ---
-
-## Sincronización entre portátiles
-
-```powershell
-# Al terminar de trabajar en un portatil:
-git status
-git add 01_Iterativos/1.01_MaximoSecuencia/ README.md
-git commit -m "feat(iterativos): ejercicio 1.01 Maximo de una secuencia"
-git push
-
-# Al empezar a trabajar en el otro portatil:
-git pull
-```

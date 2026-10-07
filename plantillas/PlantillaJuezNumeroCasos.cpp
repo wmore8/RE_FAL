@@ -1,46 +1,50 @@
-// =========================================================
-// PLANTILLA: Numero de casos determinado al inicio
-// Asignatura: Fundamentos de la Algoritmia (FAL)
-// =========================================================
+// Nombre del alumno .....
+// Usuario del Juez ......
+
 
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include <vector>
 
-// Funcion que resuelve el problema mediante la tecnica del tema
-// (Iterativos, Divide y Venceras, Programacion Dinamica, Vuelta Atras)
-void resolver() {
-    // TODO: Implementar algoritmo
+
+// función que resuelve el problema
+TipoSolucion resolver(TipoDatos datos) {
+    
+    
 }
 
-// Resuelve un caso de prueba leyendo la entrada y mostrando la salida
+// Resuelve un caso de prueba, leyendo de la entrada la
+// configuración, y escribiendo la respuesta
 void resuelveCaso() {
-    // 1. Lectura de datos del caso
+    // leer los datos de la entrada
     
-    // 2. Resolver
-    resolver();
     
-    // 3. Escribir resultado
+    TipoSolucion sol = resolver(datos);
+    // escribir sol
+    
+    
 }
 
 int main() {
-    // Redireccion de entrada para depuracion local en Visual Studio
-#ifndef DOMJUDGE
-    std::ifstream in("casos.in");
-    if (!in.is_open()) in.open("datos.txt");
-    auto cinbuf = std::cin.rdbuf(in.rdbuf());
-#endif 
-
-    int numCasos = 0;
+    // Para la entrada por fichero.
+    // Comentar para acepta el reto
+    #ifndef DOMJUDGE
+     std::ifstream in("datos.txt");
+     auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
+     #endif 
+    
+    
+    int numCasos;
     std::cin >> numCasos;
-    for (int i = 0; i < numCasos; ++i) {
+    for (int i = 0; i < numCasos; ++i)
         resuelveCaso();
-    }
 
-#ifndef DOMJUDGE
-    std::cin.rdbuf(cinbuf);
-#endif
-
+    
+    // Para restablecer entrada. Comentar para acepta el reto
+     #ifndef DOMJUDGE // para dejar todo como estaba al principio
+     std::cin.rdbuf(cinbuf);
+     system("PAUSE");
+     #endif
+    
     return 0;
 }
