@@ -10,10 +10,10 @@ Diseñado para sincronización fluida entre equipos y ejecución nativa en **Vis
 
 ```text
 RE_FAL/
-├── CMakeLists.txt                # Configuracion CMake con auto-deteccion de ejercicios
-├── .gitignore                    # Filtro de temporales de VS2022 y CMake
-├── README.md                     # Indice y panel de control
-├── plantillas/                   # Plantillas oficiales para jueces online (Domjudge)
+├── CMakeLists.txt	# Configuracion CMake con auto-deteccion de ejercicios
+├── .gitignore		# Filtro de temporales de VS2022 y CMake
+├── README.md		# Indice y panel de control
+├── plantillas/		# Plantillas oficiales para jueces online (Domjudge)
 │   ├── PlantillaJuezNumeroCasos.cpp
 │   ├── PlantillaJuezCentinela.cpp
 │   └── PlantillaJuezCasosIlimitados.cpp
@@ -23,6 +23,15 @@ RE_FAL/
 │   ├── 0.3 Duplicar secuencia de numeros (centinela)/
 │   └── 0.4 Duplicar secuencia de numeros (casos ilimitados)/
 ├── 1_Iterativos/
+│   ├── 1.01 Numero de maximos/
+│   ├── 1.02 Ultima vez que/
+│   ├── 1.03 Caminando voy/
+│   ├── 1.04 Recorridos largos pero no muy duros/
+│   ├── 1.05 Presa Castoril/
+│   ├── 1.06 Zona de peligro/
+│   ├── 1.07 Rescate aereo 1/
+│   ├── 1.08 Mejorando las carreteras/
+│   └── 1.09 Todos con la seleccion/
 ├── 2_Recursion_DyV/
 ├── 3_ProgramacionDinamica/
 ├── 4_VueltaAtras/
@@ -67,6 +76,14 @@ RE_FAL/
 
 | Nº | Ejercicio | Enunciado | Solución | Complejidad | Estado |
 | :---: | :--- | :---: | :---: | :---: | :---: |
-| - | *(Pendiente de añadir)* | - | - | - | - |
+| 1.01 | Número de máximos | [PDF](1_Iterativos/1.01%20Numero%20de%20maximos/prob-FAL-IT-MaximoSecuencia-3.pdf) | [1_01.cpp](1_Iterativos/1.01%20Numero%20de%20maximos/1_01.cpp) | $O(N)$ | `CORRECT` |
+| 1.02 | Última vez que... | [PDF](1_Iterativos/1.02%20Ultima%20vez%20que/prob-FAL-IT-UltimaVez-3.pdf) | [1_02.cpp](1_Iterativos/1.02%20Ultima%20vez%20que/1_02.cpp) | $O(N)$ | `CORRECT` |
+| 1.03 | Caminando voy | [PDF](1_Iterativos/1.03%20Caminando%20voy/prob-FAL-IT-CaminandoVoy-6.pdf) | [1_03.cpp](1_Iterativos/1.03%20Caminando%20voy/1_03.cpp) | $O(N)$ | `CORRECT` |
+| 1.04 | Recorridos largos pero no muy duros | [PDF](1_Iterativos/1.04%20Recorridos%20largos%20pero%20no%20muy%20duros/prob-FAL-IT-EC1-E-25.pdf) | [EC_1.cpp](1_Iterativos/1.04%20Recorridos%20largos%20pero%20no%20muy%20duros/EC_1.cpp) | $O(N)$ | `CORRECT` |
+| 1.05 | Presa Castoril | [PDF](1_Iterativos/1.05%20Presa%20Castoril/prob-FAL-IT-castores-10.pdf) | [1_05.cpp](1_Iterativos/1.05%20Presa%20Castoril/1_05.cpp) | $O(N)$ | `CORRECT` |
+| 1.06 | Zona de peligro | [PDF](1_Iterativos/1.06%20Zona%20de%20peligro/prob-FAL-IT-zonapeligro-10.pdf) | [1_06.cpp](1_Iterativos/1.06%20Zona%20de%20peligro/1_06.cpp) | $O(N)$ | `CORRECT` |
+| 1.07 | Rescate aéreo 1 | [PDF](1_Iterativos/1.07%20Rescate%20aereo%201/prob-FAL-IT-RescateAereo-3.pdf) | [1_07.cpp](1_Iterativos/1.07%20Rescate%20aereo%201/1_07.cpp) | $O(N)$ | `CORRECT` |
+| 1.08 | Mejorando las carreteras | [PDF](1_Iterativos/1.08%20Mejorando%20las%20carreteras/prob-FAL-IT-MejorandoCarreteras-3.pdf) | [1_08.cpp](1_Iterativos/1.08%20Mejorando%20las%20carreteras/1_08.cpp) | $O(N \log N)$ | `CORRECT` |
+| 1.09 | Todos con la selección | [PDF](1_Iterativos/1.09%20Todos%20con%20la%20seleccion/prob-FAL-IT-TodosConLaSeleccion-3.pdf) | [1_09.cpp](1_Iterativos/1.09%20Todos%20con%20la%20seleccion/1_09.cpp) | $O(N)$ | `CORRECT` |
 
 ---
