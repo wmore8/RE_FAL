@@ -53,6 +53,12 @@ RE_FAL/
 │   ├── 2.11 La rareza de un numero/
 │   └── 2.12 Digitos obtusos/
 ├── 3_DivideYVenceras/
+│   ├── 3.01 Obtener el minimo de un vector/
+│   ├── 3.02 Fuga de la prision/
+│   ├── 3.03 El juego del bongo/
+│   ├── 3.04 Vector parcialmente ordenado/
+│   ├── 3.05 Numeros caucasicos/
+│   └── 3.06 Unico impar/
 ├── 4_VueltaAtras/
 └── Examenes/
 ```
@@ -128,5 +134,16 @@ RE_FAL/
 | 2.10 | Formar numeros con sus cifras decrecientes | [PDF](2_Recursion/2.10%20Formar%20numeros%20con%20sus%20cifras%20decrecientes/prob-FAL-NUM-DigitosDecrecientesFinalYNoFinal-3.pdf) | [2_10.cpp](2_Recursion/2.10%20Formar%20numeros%20con%20sus%20cifras%20decrecientes/2_10.cpp) | $O(\log_{10} n)$ | `CORRECT` |
 | 2.11 | La rareza de un número | [PDF](2_Recursion/2.11%20La%20rareza%20de%20un%20numero/prob-FAL-NUM-Misticos-10.pdf) | [2_11.cpp](2_Recursion/2.11%20La%20rareza%20de%20un%20numero/2_11.cpp) | $O(\log_{10} n)$ | `CORRECT` |
 | 2.12 | Dígitos obtusos | [PDF](2_Recursion/2.12%20Digitos%20obtusos/prob-FAL-NUM-Obtusos-10.pdf) | [2_12.cpp](2_Recursion/2.12%20Digitos%20obtusos/2_12.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+
+### Tema 3: Divide y Vencerás
+
+| Nº | Ejercicio | Enunciado | Solución | Complejidad | Estado |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| 3.01 | Obtener el mínimo de un vector | [PDF](3_DivideYVenceras/3.01%20Obtener%20el%20minimo%20de%20un%20vector/prob-FAL-DYV-MinimoVectorRotado-3.pdf) | [3_01.cpp](3_DivideYVenceras/3.01%20Obtener%20el%20minimo%20de%20un%20vector/3_01.cpp) | $O(\log n)$ | `CORRECT` |
+| 3.02 | Fuga de la prisión | [PDF](3_DivideYVenceras/3.02%20Fuga%20de%20la%20prision/prob-FAL-DYV-FugaPrision-3.pdf) | [3_02.cpp](3_DivideYVenceras/3.02%20Fuga%20de%20la%20prision/3_02.cpp) | $O(\log n)$ | `CORRECT` |
+| 3.03 | El juego del bongo | [PDF](3_DivideYVenceras/3.03%20El%20juego%20del%20bongo/prob-FAL-DYV-Bongo-3.pdf) | [3_03.cpp](3_DivideYVenceras/3.03%20El%20juego%20del%20bongo/3_03.cpp) | $O(\log n)$ | `CORRECT` |
+| 3.04 | Vector parcialmente ordenado | [PDF](3_DivideYVenceras/3.04%20Vector%20parcialmente%20ordenado/prob-FAL-DYV-ParcialmenteOrdenado-3.pdf) | [3_04.cpp](3_DivideYVenceras/3.04%20Vector%20parcialmente%20ordenado/3_04.cpp) | $O(n)$ | `CORRECT` |
+| 3.05 | Números caucásicos | [PDF](3_DivideYVenceras/3.05%20Numeros%20caucasicos/prob-FAL-DYV-Caucasicos-3.pdf) | [3_05.cpp](3_DivideYVenceras/3.05%20Numeros%20caucasicos/3_05.cpp) | $O(n)$ | `CORRECT` |
+| 3.06 | Unico Impar | [PDF](3_DivideYVenceras/3.06%20Unico%20impar/prob-FAL-DYV-UnicoImpar-4.pdf) | [3_06.cpp](3_DivideYVenceras/3.06%20Unico%20impar/3_06.cpp) | $O(\log n)$ | `CORRECT` |
 
 ---
