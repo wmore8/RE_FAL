@@ -10,10 +10,25 @@
 using namespace std;
 
 /*
-P: 0 >= N >= 100.000
-func
-Q:
+P: { 0 < v.size() < 100000 }
+
+func ultimaVez(v: vector<string>, p: string) dev <res: bool, cont: int>
+
+Q: { res = (existe k : 0 <= k < v.size() : v[k] == p) && (res -> cont = v.size() - (max k : 0 <= k < v.size() && v[k] == p : k)) }
+
+Invariante:
+   I = { -1 <= i < v.size() &&
+         (res <-> (i >= 0 && v[i] == p)) &&
+         (!res -> (para todo k : i < k < v.size() : v[k] != p)) }
+
+Funcion de cota:
+   t(i) = i + 1
+
+Coste:
+   - Caso mejor: O(1) cuando el pais buscado gano en la ultima edicion (v[v.size() - 1] == p), realizando una sola iteracion y comprobacion.
+   - Caso peor: O(N) con N = v.size(), cuando el pais nunca gano o solo gano en la primera edicion (v[0]), recorriendo el vector entero.
 */
+
 bool resuelveCaso() {
     int N = 0; cin >> N;
 

@@ -9,11 +9,32 @@
 
 using namespace std;
 
+/*
+pred esSubida(v,p,q) -> para todo i : p <= i < q : v[i] < v[i+1] 
+
+P: 1 <= N <= 200.000 && 0 <= D <= 1.000.000
+
+func esApto(vector<int> : v, int : D) dev <bool: ok>
+
+Q: ok = (para todo i,j : 0 <= i < j < v.size() && esSubida(v, i ,j): v[j] - v[i] <= D)
+
+Invariante -> I = 1 <= i < v.size() &&
+desnivel = (para todo p,q : 0 <= p < q < i && esSubida(v,p,q) : v[q] - v[p]) && 
+apto = (para todo p,q : 0 <= p < q < i && esSubida(v,p,q) : v[q] - v[p] <= D)
+
+Funcion de cota: t(i) = v.size()  - i
+
+Coste: 
+    - Caso mejor: O(1) si el desnivel supera D en las primeras posiciones y el bucle termina antes.
+    - Caso peor: O(N) con N = v.size(), cuando la excursion es apta o la infraccion se detecta al final del vector, 
+    realizando N - 1 iteraciones con operaciones de coste O(1).
+*/
+
 // Resuelve un caso de prueba, leyendo de la entrada la
 // configuración, y escribiendo la respuesta
 bool resuelveCaso() {
     // leer los datos de la entrada
-    int D=0, N = 0; cin >> D >> N;
+    int D = 0, N = 0; cin >> D >> N;
 
     if (!std::cin)
         return false;
