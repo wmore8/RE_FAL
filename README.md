@@ -39,8 +39,20 @@ RE_FAL/
 │   ├── 1.14 Esta bien dividido el vector/
 │   ├── 1.15 Un movil nuevo/
 │   └── 1.16 Releyendo un libro. Version 1/
-├── 2_Recursion_DyV/
-├── 3_ProgramacionDinamica/
+├── 2_Recursion/
+│   ├── 2.01 Calculo del maximo comun divisor (Metodo de Euclides)/
+│   ├── 2.02 Transformar un numero decimal a binario/
+│   ├── 2.03 Invertir un numero/
+│   ├── 2.04 Lucky Lucke en busca del culpable/
+│   ├── 2.05 Numeros que suman lo mismo/
+│   ├── 2.06 Digitos complementarios/
+│   ├── 2.07 Jugando con los digitos de un numero/
+│   ├── 2.08 Numero Sumdivisible/
+│   ├── 2.09 Codificar un numero/
+│   ├── 2.10 Formar numeros con sus cifras decrecientes/
+│   ├── 2.11 La rareza de un numero/
+│   └── 2.12 Digitos obtusos/
+├── 3_DivideYVenceras/
 ├── 4_VueltaAtras/
 └── Examenes/
 ```
@@ -99,5 +111,22 @@ RE_FAL/
 | 1.14 | ¿Está bien dividido el vector? | [PDF](1_Iterativos/1.14%20Esta%20bien%20dividido%20el%20vector/prob-FAL-IT-VectorBienDividido-3.pdf) | [1_14.cpp](1_Iterativos/1.14%20Esta%20bien%20dividido%20el%20vector/1_14.cpp) | $O(N)$ | `CORRECT` |
 | 1.15 | Un móvil nuevo | [PDF](1_Iterativos/1.15%20Un%20movil%20nuevo/prob-FAL-IT-MovilNuevoMezclaOrdenada-3.pdf) | [1_15.cpp](1_Iterativos/1.15%20Un%20movil%20nuevo/1_15.cpp) | $O(N)$ | `CORRECT` |
 | 1.16 | Releyendo un libro. Versión 1 | [PDF](1_Iterativos/1.16%20Releyendo%20un%20libro.%20Version%201/prob-FAL-IT-ReleyendoLibroSinPreferida-3.pdf) | [1_16.cpp](1_Iterativos/1.16%20Releyendo%20un%20libro.%20Version%201/1_16.cpp) | $O(N)$ | `CORRECT` |
+
+### Tema 2: Recursión
+
+| Nº | Ejercicio | Enunciado | Solución | Complejidad | Estado |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| 2.01 | Cálculo del máximo común divisor (Método de Euclides) | [PDF](2_Recursion/2.01%20Calculo%20del%20maximo%20comun%20divisor%20(Metodo%20de%20Euclides)/prob-FAL-REC-AlgoritmoEuclides-3.pdf) | [2_01.cpp](2_Recursion/2.01%20Calculo%20del%20maximo%20comun%20divisor%20(Metodo%20de%20Euclides)/2_01.cpp) | $O(\log(\min(a, b)))$ | `CORRECT` |
+| 2.02 | Transformar un número decimal a binario | [PDF](2_Recursion/2.02%20Transformar%20un%20numero%20decimal%20a%20binario/prob-FAL-NUM-DecimalBinario-3.pdf) | [2_02.cpp](2_Recursion/2.02%20Transformar%20un%20numero%20decimal%20a%20binario/2_02.cpp) | $O(\log n)$ | `CORRECT` |
+| 2.03 | Invertir un número | [PDF](2_Recursion/2.03%20Invertir%20un%20numero/prob-FAL-NUM-InvertirNumero-3.pdf) | [2_03.cpp](2_Recursion/2.03%20Invertir%20un%20numero/2_03.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+| 2.04 | Lucky Lucke en busca del culpable | [PDF](2_Recursion/2.04%20Lucky%20Lucke%20en%20busca%20del%20culpable/prob-FAL-DYV-LuckyLuke-3.pdf) | [2_04.cpp](2_Recursion/2.04%20Lucky%20Lucke%20en%20busca%20del%20culpable/2_04.cpp) | $O(\log n)$ | `CORRECT` |
+| 2.05 | Números que suman lo mismo | [PDF](2_Recursion/2.05%20Numeros%20que%20suman%20lo%20mismo/prob-FAL-NUM-SumarDigitos-3.pdf) | [2_05.cpp](2_Recursion/2.05%20Numeros%20que%20suman%20lo%20mismo/2_05.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+| 2.06 | Dígitos complementarios | [PDF](2_Recursion/2.06%20Digitos%20complementarios/prob-FAL-NUM-DigitosComplementarios-4.pdf) | [2_06.cpp](2_Recursion/2.06%20Digitos%20complementarios/2_06.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+| 2.07 | Jugando con los dígitos de un número | [PDF](2_Recursion/2.07%20Jugando%20con%20los%20digitos%20de%20un%20numero/prob-FAL-NUM-JugandoDigitos-3.pdf) | [2_07.cpp](2_Recursion/2.07%20Jugando%20con%20los%20digitos%20de%20un%20numero/2_07.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+| 2.08 | Número Sumdivisible | [PDF](2_Recursion/2.08%20Numero%20Sumdivisible/prob-FAL-NUM-SumDivisible-1.pdf) | [2_08.cpp](2_Recursion/2.08%20Numero%20Sumdivisible/2_08.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+| 2.09 | Codificar un Numero | [PDF](2_Recursion/2.09%20Codificar%20un%20numero/prob-FAL-NUM-CodificarNumero-4.pdf) | [2_09.cpp](2_Recursion/2.09%20Codificar%20un%20numero/2_09.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+| 2.10 | Formar numeros con sus cifras decrecientes | [PDF](2_Recursion/2.10%20Formar%20numeros%20con%20sus%20cifras%20decrecientes/prob-FAL-NUM-DigitosDecrecientesFinalYNoFinal-3.pdf) | [2_10.cpp](2_Recursion/2.10%20Formar%20numeros%20con%20sus%20cifras%20decrecientes/2_10.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+| 2.11 | La rareza de un número | [PDF](2_Recursion/2.11%20La%20rareza%20de%20un%20numero/prob-FAL-NUM-Misticos-10.pdf) | [2_11.cpp](2_Recursion/2.11%20La%20rareza%20de%20un%20numero/2_11.cpp) | $O(\log_{10} n)$ | `CORRECT` |
+| 2.12 | Dígitos obtusos | [PDF](2_Recursion/2.12%20Digitos%20obtusos/prob-FAL-NUM-Obtusos-10.pdf) | [2_12.cpp](2_Recursion/2.12%20Digitos%20obtusos/2_12.cpp) | $O(\log_{10} n)$ | `CORRECT` |
 
 ---
