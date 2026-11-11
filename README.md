@@ -31,7 +31,14 @@ RE_FAL/
 │   ├── 1.06 Zona de peligro/
 │   ├── 1.07 Rescate aereo 1/
 │   ├── 1.08 Mejorando las carreteras/
-│   └── 1.09 Todos con la seleccion/
+│   ├── 1.09 Todos con la seleccion/
+│   ├── 1.10 Descenso prolongado en solitario/
+│   ├── 1.11 Sensores defectuosos/
+│   ├── 1.12 Como van las encuestas/
+│   ├── 1.13 Un apartamento con vistas/
+│   ├── 1.14 Esta bien dividido el vector/
+│   ├── 1.15 Un movil nuevo/
+│   └── 1.16 Releyendo un libro. Version 1/
 ├── 2_Recursion_DyV/
 ├── 3_ProgramacionDinamica/
 ├── 4_VueltaAtras/
@@ -85,5 +92,12 @@ RE_FAL/
 | 1.07 | Rescate aéreo 1 | [PDF](1_Iterativos/1.07%20Rescate%20aereo%201/prob-FAL-IT-RescateAereo-3.pdf) | [1_07.cpp](1_Iterativos/1.07%20Rescate%20aereo%201/1_07.cpp) | $O(N)$ | `CORRECT` |
 | 1.08 | Mejorando las carreteras | [PDF](1_Iterativos/1.08%20Mejorando%20las%20carreteras/prob-FAL-IT-MejorandoCarreteras-3.pdf) | [1_08.cpp](1_Iterativos/1.08%20Mejorando%20las%20carreteras/1_08.cpp) | $O(N \log N)$ | `CORRECT` |
 | 1.09 | Todos con la selección | [PDF](1_Iterativos/1.09%20Todos%20con%20la%20seleccion/prob-FAL-IT-TodosConLaSeleccion-3.pdf) | [1_09.cpp](1_Iterativos/1.09%20Todos%20con%20la%20seleccion/1_09.cpp) | $O(N)$ | `CORRECT` |
+| 1.10 | Descenso prolongado en solitario | [PDF](1_Iterativos/1.10%20Descenso%20prolongado%20en%20solitario/prob-FAL-IT-Descenso-JUN25.pdf) | [1_10.cpp](1_Iterativos/1.10%20Descenso%20prolongado%20en%20solitario/1_10.cpp) | $O(N)$ | `CORRECT` |
+| 1.11 | Sensores defectuosos | [PDF](1_Iterativos/1.11%20Sensores%20defectuosos/prob-FAL-IT-EliminarErroneos-3.pdf) | [1_11.cpp](1_Iterativos/1.11%20Sensores%20defectuosos/1_11.cpp) | $O(N)$ | `CORRECT` |
+| 1.12 | ¿Cómo van las encuestas? | [PDF](1_Iterativos/1.12%20Como%20van%20las%20encuestas/prob-FAL-IT-MayoresQueMinimo-3.pdf) | [1_12.cpp](1_Iterativos/1.12%20Como%20van%20las%20encuestas/1_12.cpp) | $O(N)$ | `CORRECT` |
+| 1.13 | Un apartamento con vistas | [PDF](1_Iterativos/1.13%20Un%20apartamento%20con%20vistas/prob-FAL-IT-ApartamentoConVistas-3.pdf) | [1_13.cpp](1_Iterativos/1.13%20Un%20apartamento%20con%20vistas/1_13.cpp) | $O(N)$ | `CORRECT` |
+| 1.14 | ¿Está bien dividido el vector? | [PDF](1_Iterativos/1.14%20Esta%20bien%20dividido%20el%20vector/prob-FAL-IT-VectorBienDividido-3.pdf) | [1_14.cpp](1_Iterativos/1.14%20Esta%20bien%20dividido%20el%20vector/1_14.cpp) | $O(N)$ | `CORRECT` |
+| 1.15 | Un móvil nuevo | [PDF](1_Iterativos/1.15%20Un%20movil%20nuevo/prob-FAL-IT-MovilNuevoMezclaOrdenada-3.pdf) | [1_15.cpp](1_Iterativos/1.15%20Un%20movil%20nuevo/1_15.cpp) | $O(N)$ | `CORRECT` |
+| 1.16 | Releyendo un libro. Versión 1 | [PDF](1_Iterativos/1.16%20Releyendo%20un%20libro.%20Version%201/prob-FAL-IT-ReleyendoLibroSinPreferida-3.pdf) | [1_16.cpp](1_Iterativos/1.16%20Releyendo%20un%20libro.%20Version%201/1_16.cpp) | $O(N)$ | `CORRECT` |
 
 ---

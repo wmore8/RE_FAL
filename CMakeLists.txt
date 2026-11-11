@@ -40,10 +40,11 @@ foreach(CPP_FILE ${ALL_CPPS})
         # Registrar el ejecutable
         add_executable(${TARGET_NAME} "${CPP_FILE}")
 
-        # 1. Copiar automaticamente archivos de casos (.in, .ans, .txt) a la carpeta del .exe tras compilar
+        # 1. Copiar automaticamente archivos de casos (.in, .ans, .out, .txt) a la carpeta del .exe tras compilar
         file(GLOB TEST_FILES LIST_DIRECTORIES false 
             "${EXERCISE_DIR}/*.in" 
             "${EXERCISE_DIR}/*.ans" 
+            "${EXERCISE_DIR}/*.out" 
             "${EXERCISE_DIR}/*.txt"
         )
         foreach(TEST_FILE ${TEST_FILES})
